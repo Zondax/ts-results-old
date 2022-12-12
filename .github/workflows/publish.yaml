@@ -39,7 +39,7 @@ jobs:
           index_of_str: "npm_"
       - name: Update tag
         run: |
-          cd js
+          cd dist
           echo Publishing as ${{ steps.get_version_cleaned.outputs.version }}
           npm --allow-same-version --no-git-tag-version version ${{ steps.get_version_cleaned.outputs.version }}
       - name: Publish package
