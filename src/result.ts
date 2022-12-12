@@ -142,6 +142,7 @@ export class ErrImpl<E> implements BaseResult<never, E> {
         throw new Error(`${msg} - Error: ${toString(this.val)}\n${this._stack}`);
     }
 
+    // @ts-expect-error
     expectErr(_msg: string): E {
         return this.val
     }
