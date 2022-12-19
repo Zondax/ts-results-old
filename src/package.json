@@ -1,7 +1,7 @@
 {
-  "name": "ts-results",
+  "name": "@zondax/ts-results",
   "version": "3.3.2",
-  "description": "A typescript implementation of Rust's Result and Option objects.",
+  "description": "A typescript implementation of Rust's Result and Option objects. (Forked)",
   "main": "index.js",
   "module": "./esm/index.js",
   "types": "index.d.ts",
@@ -27,7 +27,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/vultix/ts-results"
+    "url": "https://github.com/zondax/ts-results"
   },
-  "readme": "README.md"
+  "readme": "README.md",
+  "publishConfig": {
+    "access": "public"
+  }
 }
