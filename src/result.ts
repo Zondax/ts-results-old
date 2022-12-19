@@ -298,7 +298,7 @@ export namespace Result {
         try {
             return new Ok(op());
         } catch (e) {
-            return new Err<E>(e);
+            return new Err<E>(e as any);
         }
     }
 
@@ -312,7 +312,7 @@ export namespace Result {
                 .then((val) => new Ok(val))
                 .catch((e) => new Err(e));
         } catch (e) {
-            return Promise.resolve(new Err(e));
+            return Promise.resolve(new Err(e as any));
         }
     }
 
