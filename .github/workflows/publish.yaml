@@ -22,7 +22,7 @@ jobs:
           registry-url: "https://registry.npmjs.org"
           scope: "@zondax"
       - name: Install packages
-        run: npm install 
+        run: npm ci
       - name: Build package
         run: npm run build
       - name: Get latest release version number
